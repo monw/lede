@@ -102,6 +102,16 @@ define Build/zytrx-header
 	mv $@.new $@
 endef
 
+define Device/qm_b1
+  IMAGE_SIZE := 16064k
+  DEVICE_VENDOR := QM
+  DEVICE_MODEL := B1
+  DEVICE_VARIANT := 16M
+  DEVICE_PACKAGES := kmod-ata-ahci kmod-sdhci-mt7620 kmod-mt76x2 \
+	kmod-usb3 wpad-openssl
+endef
+TARGET_DEVICES += qm_b1
+
 define Device/adslr_g7
   IMAGE_SIZE := 16064k
   DEVICE_VENDOR := ADSLR
