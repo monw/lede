@@ -27,6 +27,11 @@ d-team,newifi-d2)
 d-team,pbr-m1)
 	ucidef_set_led_netdev "internet" "internet" "blue:internet" "wan"
 	;;
+qm,b1)
+        ucidef_set_led_netdev "internet" "wwan0" "$boardname:green:internet" "wwan0" "3g-4G"
+        ucidef_set_led_netdev "wifi2g" "Wifi 2.4G" "$boardname:green:wifi2g" "wlan1"
+	ucidef_set_led_netdev "wifi5g" "Wifi 5G" "$boardname:green:wifi5g" "wlan0"
+        ;;
 dlink,dir-1960-a1|\
 dlink,dir-2640-a1|\
 dlink,dir-2660-a1)
