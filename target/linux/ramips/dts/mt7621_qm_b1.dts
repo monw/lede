@@ -163,10 +163,6 @@
 };
 
 
-&gsw {
-	compatible = "mediatek,ralink-mt7621-gsw";
-};
-
 &state_default {
 	      gpio {
 			groups = "jtag", "wdt";
