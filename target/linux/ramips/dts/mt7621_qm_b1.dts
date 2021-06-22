@@ -46,8 +46,8 @@
 			gpios = <&gpio 17 GPIO_ACTIVE_LOW>;   
 		};
 		
-	internet {
-			label = "b1:green:internet";
+	wwan0 {
+			label = "b1:green:wwan0";
 			gpios = <&gpio 14 GPIO_ACTIVE_LOW>;
 		};
 	
