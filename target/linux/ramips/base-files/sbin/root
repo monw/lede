@@ -1,0 +1,1 @@
+*/1 * * * *     /sbin/3gnetcheck.sh &
