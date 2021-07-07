@@ -27,6 +27,11 @@ d-team,newifi-d2)
 d-team,pbr-m1)
 	ucidef_set_led_netdev "internet" "internet" "blue:internet" "wan"
 	;;
+qm,b1)
+        ucidef_set_led_netdev "wifi5g" "Wifi5g" "green:wifi5g" "wlan0"
+        ucidef_set_led_netdev "wifi2g" "Wifi2g" "green:wifi2g" "wlan1"
+	ucidef_set_led_netdev "wwan0" "wwan0" "green:wwan0" "wwan0"
+        ;;
 dlink,dir-1960-a1|\
 dlink,dir-2640-a1|\
 dlink,dir-2660-a1)
