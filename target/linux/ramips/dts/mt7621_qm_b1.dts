@@ -32,26 +32,25 @@
         compatible = "gpio-leds";
 
         led_status: status {
-			label = "b1:green:status";
+			label = "green:status";
 			gpios = <&gpio 15 GPIO_ACTIVE_LOW>;
 		};
 		
         wifi2g {
-			label = "b1:green:wifi2g";
+			label = "green:wifi2g";
 			gpios = <&gpio 13 GPIO_ACTIVE_LOW>;
 		};
 
 	wifi5g {
-			label = "b1:green:wifi5g";
+			label = "green:wifi5g";
 			gpios = <&gpio 17 GPIO_ACTIVE_LOW>;
 		};
 		
 	wwan0 {
-			label = "b1:green:wwan0";
+			label = "green:wwan0";
 			gpios = <&gpio 14 GPIO_ACTIVE_LOW>;
 		};
-	
-        
+	        
     };
 
     keys {
