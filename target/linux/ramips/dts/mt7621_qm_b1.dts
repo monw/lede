@@ -39,19 +39,16 @@
         wifi2g {
 			label = "b1:green:wifi2g";
 			gpios = <&gpio 13 GPIO_ACTIVE_LOW>;
-			default-state = "on";
 		};
 
 	wifi5g {
 			label = "b1:green:wifi5g";
 			gpios = <&gpio 17 GPIO_ACTIVE_LOW>;
-			default-state = "on";
 		};
 		
 	wwan0 {
 			label = "b1:green:wwan0";
 			gpios = <&gpio 14 GPIO_ACTIVE_LOW>;
-			default-state = "on";
 		};
 	
         
