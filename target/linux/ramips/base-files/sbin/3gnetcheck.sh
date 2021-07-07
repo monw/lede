@@ -16,11 +16,11 @@ else
         echo $host >/etc/config/3gpinghost
 fi
 
-CHECKTTYUSB2=`ls -l /dev/ttyUSB2 | wc -l ` 2>/dev/null
-if [ "${CHECKTTYUSB2}" != "0" ]; then
+CHECKTTYUSB1=`ls -l /dev/ttyUSB1 | wc -l ` 2>/dev/null
+if [ "${CHECKTTYUSB1}" != "0" ]; then
     CHECKNET=`cat /tmp/rp.log | wc -l` 2>/dev/null
     if [ $CHECKNET -gt 1  ]; then
-    echo -e "at+cfun=1,1\r\n" > /dev/ttyUSB2 &
+    echo -e "at+cfun=1,1\r\n" > /dev/ttyUSB1 &
     echo "  /sbin/3gnetcheck.sh LOG: Reset 3G mode reboot!!!" >/dev/ttyS0
     sleep 2
     rm -rf /tmp/rp.log
