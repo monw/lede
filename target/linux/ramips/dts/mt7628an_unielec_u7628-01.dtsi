@@ -72,6 +72,7 @@
 		wlan {
 			label = "u7628-01:green:wlan";
 			gpios = <&gpio 44 GPIO_ACTIVE_LOW>;
+			default-state = "on";
 		};
 		
 		usb {
